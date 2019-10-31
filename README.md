@@ -1,5 +1,20 @@
 # wheel-of-food
 
+## Docker setup
+This project uses a Dockerfile to automate and version control the dev ops steps.
+
+## Build the docker image
+```
+docker build -t wheel-of-food .
+```
+
+## Run the docker image
+```
+docker run -it -p 8080:80 --rm --name wheel-of-food-app wheel-of-food
+```
+
+
+# Vue CLI instructions (if not using Docker)
 ## Project setup
 ```
 npm install
